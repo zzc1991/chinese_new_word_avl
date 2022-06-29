@@ -4,7 +4,7 @@ import utils
 import time
 
 if __name__ == "__main__":
-    root, stopwords, filename = None, utils.get_stopwords(), 'data/kejiao.txt'
+    root, stopwords, filename = None, utils.get_stopwords(), 'data/demo.txt'
     data = load_data(filename, stopwords)
     word_number, word_freq, number_word = get_code_dict(data)
     data_code, op = word2num(data, word_number), model_avl_tree.OperationTree()
